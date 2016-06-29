@@ -1,0 +1,16 @@
+[
+{
+  "modid": "DragonEggRecipe",
+  "name": "Dragon Egg Recipe",
+  "description": "Craft dragon eggs using nether stars.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "www.ferdinandbermudez.com",
+  "updateUrl": "",
+  "authorList": ["Ferdinand Bermudez"],
+  "credits": "",
+  "logoFile": "logo.png",
+  "screenshots": ["screenshot.png"],
+  "dependencies": []
+}
+]
