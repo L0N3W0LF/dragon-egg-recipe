@@ -1,6 +1,6 @@
 [
 {
-  "modid": "DragonEggRecipe",
+  "modid": "dragoneggrecipe",
   "name": "Dragon Egg Recipe",
   "description": "Craft dragon eggs using nether stars.",
   "version": "${version}",
