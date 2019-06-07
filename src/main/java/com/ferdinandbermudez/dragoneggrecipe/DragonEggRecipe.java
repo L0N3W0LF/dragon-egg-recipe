@@ -3,6 +3,7 @@ package com.ferdinandbermudez.dragoneggrecipe;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,9 +16,11 @@ public class DragonEggRecipe {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        ResourceLocation name  = new ResourceLocation(MODID + ":dragonegg");
+        ResourceLocation group = new ResourceLocation(MODID + ":recipe");
         ItemStack dragonEgg = new ItemStack(Blocks.DRAGON_EGG);
         ItemStack dragonEggCore = new ItemStack(Items.NETHER_STAR);
         ItemStack dragonEggShell = new ItemStack(Blocks.OBSIDIAN);
-        GameRegistry.addRecipe(dragonEgg, "sss", "scs", "sss", 'c', dragonEggCore, 's', dragonEggShell);
+        GameRegistry.addShapedRecipe(name, group, dragonEgg, "sss", "scs", "sss", 'c', dragonEggCore, 's', dragonEggShell);
     }
 }
